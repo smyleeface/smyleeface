@@ -11,3 +11,6 @@ read -p "In ~/.zshrc, change \`ZSH_THEME=\"jonathan\"\` to \`ZSH_THEME=\"pattyr\
 brew install asdf
 ln -s $HOME/Projects/smyleeface/.tool-versions $HOME/.tool-versions
 asdf install
+
+#---- Python global installs ----#
+pip install -r requirements.txt
