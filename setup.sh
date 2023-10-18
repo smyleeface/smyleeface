@@ -1,5 +1,11 @@
 #!/bin/bash
 
+#---- Git and GitHub ----#
+brew install git gh
+
+#---- Language managers ----#
+brew install asdf
+
 #---- Terminal themes ----#
 
 ```bash
