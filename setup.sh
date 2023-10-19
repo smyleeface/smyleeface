@@ -1,7 +1,8 @@
 #!/bin/bash
 
 #---- Git and GitHub ----#
-brew install git gh
+brew install git gh jq
+brew install --cask git-credential-manager
 
 #---- Terminal themes ----#
 ln -s $HOME/Projects/smyleeface/pattyr.zsh-theme $HOME/.oh-my-zsh/themes/pattyr.zsh-theme
@@ -14,3 +15,12 @@ asdf install
 
 #---- Python global installs ----#
 pip install -r requirements.txt
+
+#---- Node global installs ----#
+for line in $(jq -c '.global | to_entries[]' < package.json); do
+    key=$(echo $line | jq -r '.key')
+    value=$(echo $line | jq -r '.value')
+    command="npm install -g $key@$value"
+    echo "$command"
+    $command
+done

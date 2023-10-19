@@ -1,0 +1,8 @@
+{
+    "name": "pattyr-local-apps",
+    "version": "1.0.0",
+    "description": "Global apps to install on the local machine.",
+    "global": {
+        "aws-cdk": "^2.99.1"
+    }
+}
