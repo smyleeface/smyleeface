@@ -4,6 +4,7 @@ My name is Patty, and these are my repos for testing new technologies and person
 
 Always looking for ways to learn and refresh my skills.
 
+- [Online business card](https://meet.pattyr.dev)
 - [LinkedIn](https://www.linkedin.com/in/pramert/)
 - [My other github account](https://github.com/pattyr)
 
