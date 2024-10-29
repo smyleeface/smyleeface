@@ -1,2 +1,5 @@
 python 3.11.5
 nodejs 18.18.2
+golang 1.21.0
+yarn 1.22.21
+rust 1.80.1
