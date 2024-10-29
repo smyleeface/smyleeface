@@ -1,7 +1,7 @@
 #!/bin/bash
 
 #---- Git and GitHub ----#
-brew install git gh jq
+brew install git gh jq gpg pinentry-mac gnupg
 brew install --cask git-credential-manager
 
 #---- Terminal themes ----#
@@ -24,3 +24,7 @@ for line in $(jq -c '.global | to_entries[]' < package.json); do
     echo "$command"
     $command
 done
+
+#---- configure gpg for IDE ----#
+cp -f gpg.conf $HOME/.gnupg/gpg.conf
+cp -f gpg-agent.conf $HOME/.gnupg/gpg-agent.conf
